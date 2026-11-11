@@ -1,0 +1,6 @@
+Flask>=2.0,<4
+Werkzeug>=2.0,<4
+numpy<3
+scipy<2
+cryptography>=3.4
+Pillow>=9

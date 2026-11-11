@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<script>
+(function () {
+  var path = window.location.pathname;
+  if (/^\/s\/[a-zA-Z0-9_-]+$/.test(path)) {
+    window.location.replace(path + '/' + window.location.search + window.location.hash);
+  }
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="color-scheme" content="light">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0b3d66">
+<title>卫华 · 质检现场采集（本地演示）</title>
+<link rel="stylesheet" href="./style.css?v=0.19.1">
+<link rel="stylesheet" href="./steel.css?v=0.19.1">
+<link rel="stylesheet" href="./identity.css?v=0.19.1">
+<link rel="stylesheet" href="./management.css?v=0.19.1">
+<link rel="stylesheet" href="./management_insights.css?v=0.21.0">
+</head>
+<body>
+<div id="topbar" class="topbar" style="display:none"></div>
+<div id="app"></div>
+<div id="dock"></div>
+<div id="modal"></div>
+<div id="toast"></div>
+<div id="steel-recorder-safety" hidden style="display:none"></div>
+<input id="steel-audio-file" type="file" accept="audio/*,.wav,.m4a,.aac,.mp3,.ogg,.webm" capture="user" hidden>
+<script src="./app.js?v=0.19.1"></script>
+<script src="./steel_voice.js?v=0.19.1"></script>
+<script src="./steel_audio.js?v=0.19.1"></script>
+<script src="./steel_download.js?v=0.19.1"></script>
+<script src="./identity.js?v=0.19.1"></script>
+<script src="./workflow.js?v=0.19.1"></script>
+<script src="./steel_standards.js?v=0.19.1"></script>
+<script src="./steel_ledger.js?v=0.19.1"></script>
+<script src="./steel.js?v=0.19.1"></script>
+<script src="./management.js?v=0.21.0"></script>
+<script src="./management_insights.js?v=0.21.0"></script>
+<script src="./management_api.js?v=0.21.0"></script>
+</body>
+</html>

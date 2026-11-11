@@ -1,0 +1,17 @@
+{
+  "model_id": "csukuangfj/sherpa-onnx-paraformer-zh-2024-03-09",
+  "revision": "906992d326ebf0c5171cde675aa0902be9e5bc6c",
+  "runtime_version": "2.0.1",
+  "files": [
+    {
+      "name": "model.int8.onnx",
+      "size": 227330205,
+      "sha256": "90bc03034ae1bef9575f8cc798cd1519c8be8aa9e8b458a033e32017ff4d584c"
+    },
+    {
+      "name": "tokens.txt",
+      "size": 75354,
+      "git_blob_sha1": "a9216726314d8a0ea179afcede272f20a0c97bed"
+    }
+  ]
+}

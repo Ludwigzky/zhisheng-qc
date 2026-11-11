@@ -1,0 +1,18 @@
+.identity-page { min-height: 85vh; display: grid; align-items: center; padding: 18px; }
+.identity-card { width: min(100%, 450px); margin: auto; }
+.identity-brand { margin: 0 0 6px; color: var(--brand); font-weight: 650; }
+.identity-card h1 { font-size: 25px; margin: 0 0 14px; }
+.identity-manage h2 { font-size: 18px; margin: 0 0 12px; }
+.identity-form { display: grid; gap: 12px; }
+.identity-field { display: grid; gap: 5px; font-weight: 600; }
+.identity-field input,.identity-field select { min-width: 0; width: 100%; min-height: 44px; padding: 9px 10px; font: inherit; font-size: 16px; border-radius: 8px; border: 1px solid var(--line); background: white; }
+.identity-page .btn,.identity-manage .btn { min-height: 44px; }
+.identity-mode { width: 100%; margin-top: 10px; }
+.identity-error { margin: 0; color: var(--bad); }
+.identity-error:empty { display: none; }
+.identity-manage { max-width: 760px; margin: 0 auto; }
+.identity-manage .card { margin-bottom: 14px; }
+.identity-manage ul { list-style: none; margin: 0; padding: 0; }
+.identity-row,.identity-code,.identity-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.identity-row { justify-content: space-between; padding: 10px 0; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
+.identity-code code { font: bold 18px monospace; letter-spacing: .08em; user-select: all; }

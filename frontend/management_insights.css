@@ -1,0 +1,58 @@
+.insights-filter .manager-filter-main { grid-template-columns: repeat(3,minmax(140px,1fr)) auto; align-items: end; }
+.insights-filter .btn { min-height: 44px; }
+.insights-metrics .manager-metric { display: block; }
+.insights-metrics .manager-metric > span, .insights-metrics .manager-metric > strong { display: block; }
+.insights-summary > ul { margin: 0; padding: 0 28px 12px 42px; line-height: 1.9; }
+.insights-summary > ul li { padding-bottom: 9px; }
+.insights-summary > .manager-panel-note { padding-bottom: 14px; }
+.insights-teams > details { border-top: 1px solid #e5edf2; }
+.insights-teams summary, .insights-notes summary, .insights-dimension-evidence summary { cursor: pointer; padding: 17px 22px; min-height: 48px; }
+.insights-teams summary span { margin-left: 18px; font-size: 13px; color: #567080; }
+.insights-evidence, .insights-todos { list-style: none; padding: 0 22px 16px; margin: 0; }
+.insights-evidence li { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; padding: 10px 0; border-bottom: 1px solid #edf2f5; }
+.insights-evidence li > span:not(.manager-state) { color: #687f8c; font-size: 12px; }
+.insights-source { display: inline-block; padding: 9px 0; min-height: 40px; overflow-wrap: anywhere; }
+.insights-todos li { padding: 12px 0 16px; border-bottom: 1px solid #edf2f5; }
+.insights-todos li > div { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.insights-todos p { margin: 3px 0 8px; }
+.insights-todos small { color: #687f8c; }
+.insights-notes ul { line-height: 1.9; margin-top: 0; padding: 0 24px 18px 40px; }
+.insights-dimensions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; align-items: start; }
+.insights-dimension { overflow: hidden; min-width: 0; }
+.insights-explanation { padding: 0 22px; line-height: 1.8; }
+.insights-chart { width: calc(100% - 28px); max-height: 245px; margin: 0 14px; display: block; }
+.insights-chart text { font: 10px sans-serif; fill: #607788; }
+.insights-dimension-evidence { border-top: 1px solid #e5edf2; margin-top: 15px; }
+.insights-dimension .manager-panel-head { flex-wrap: wrap; }
+.insights-dimension .manager-panel-head h2 { overflow-wrap: anywhere; }
+.insights-dimension .manager-table td, .insights-dimension .manager-table th { padding: 10px 14px; }
+.insights-dimension .manager-table { min-width: 460px; }
+.insights-api form { padding: 0 22px 22px; }
+.insights-api form > p { line-height: 1.8; }
+.insights-api-fields { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
+.insights-api-fields small { color: #687f8c; }
+.insights-api-enabled { margin: 22px 0 15px; min-height: 44px; }
+.insights-api-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.insights-ai { padding-bottom: 20px; }
+.insights-ai-summary { margin: 0; padding: 0 22px 18px; line-height: 1.9; white-space: pre-wrap; }
+.insights-ai > .btn { margin-left: 22px; }
+.insights-ai h3 { font-size: 14px; padding: 0 22px; margin: 10px 0; }
+.insights-ai > ul { padding: 0 22px 0 42px; }
+.insights-ai li p { line-height: 1.8; white-space: pre-wrap; }
+.insights-ai-evidence { display: flex; gap: 8px 15px; align-items: center; flex-wrap: wrap; }
+.insights-filter > p { margin-bottom: 0; }
+@media (max-width: 1100px) { .insights-dimensions { grid-template-columns: minmax(0,1fr); } }
+@media (max-width: 600px) {
+  .manager-sidebar nav { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .manager-sidebar nav a { min-width: 0; }
+  .insights-filter .manager-filter-main { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .insights-filter .btn { width: 100%; }
+  .insights-teams summary, .insights-notes summary, .insights-dimension-evidence summary { padding-inline: 15px; }
+  .insights-teams summary span { display: block; margin: 7px 0 0; }
+  .insights-evidence, .insights-todos { padding-inline: 15px; }
+  .insights-explanation { padding-inline: 15px; }
+  .insights-evidence li { gap: 4px 10px; }
+  .insights-api-fields { grid-template-columns: minmax(0,1fr); }
+  .insights-api form, .insights-ai-summary { padding-inline: 15px; }
+  .insights-api-actions > .btn { flex: 1 0 44%; }
+}

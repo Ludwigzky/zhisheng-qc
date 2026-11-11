@@ -1,0 +1,5 @@
+{
+  "engine": "sherpa-onnx",
+  "model_dir": "models/paraformer-zh",
+  "num_threads": 2
+}
